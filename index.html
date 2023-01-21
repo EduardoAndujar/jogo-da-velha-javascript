@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./src/css/reset.css" />
+        <link rel="stylesheet" href="./src/css/style.css" />
+        <title>Jogo da velha</title>
+    </head>
+    <body>
+        <main>
+            <h1>Jogo da velha</h1>
+            <div class="jogo">
+                <table class="jogo-da-velha">
+                    <tr class="linha linha_1">
+                        <td class="celula celula-esquerda">X</td>
+                        <td class="celula celula-meio">X</td>
+                        <td class="celula celula-direita">X</td>
+                    </tr>
+                    <tr class="linha linha_2">
+                        <td class="celula celula-esquerda">O</td>
+                        <td class="celula celula-meio">O</td>
+                        <td class="celula celula-direita">O</td>
+                    </tr>
+                    <tr class="linha linha_3">
+                        <td class="celula celula-esquerda">X</td>
+                        <td class="celula celula-meio">O</td>
+                        <td class="celula celula-direita">X</td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+
+        <div class="modal-container">
+            <div class="tela-modal">
+                <p>Ganhou!</p>
+                <button>Recomeçar</button>
+            </div>
+        </div>
+
+        <script src="./src/js/main.js"></script>
+    </body>
+</html>

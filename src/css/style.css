@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Permanent+Marker&display=swap');
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-size: 50px;
+    background: linear-gradient(60deg, #8afbff, #ffc7a3);
+    font-family: 'Indie Flower', sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main h1 {
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.jogo .linha_1,
+.jogo .linha_2 {
+    border-bottom: solid 2px black;
+}
+
+.jogo .celula-meio,
+.jogo .celula-direita {
+    border-left: solid 2px black;
+}
+
+.jogo .celula {
+    width: 125px;
+    height: 125px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Permanent Marker', sans-serif;
+}
+
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.2);
+    font-size: 60px;
+    color: #ff5100;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-container-show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.tela-modal {
+    text-align: center;
+    margin-top: 110px;
+}
+
+.tela-modal button {
+    background-color: #b5f4f7;
+    width: 120px;
+    height: 26px;
+    border-radius: 13px;
+    border: solid 1px #8afbff;
+}
+
+.tela-modal button:hover {
+    cursor: pointer;
+    background-color: white;
+}
+
+.tela-modal button:active {
+    cursor: pointer;
+    border: solid 1px #ff5100;
+}
